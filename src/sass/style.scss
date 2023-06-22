@@ -1,0 +1,176 @@
+$font-family: 'Roboto', sans-serif;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+    
+}
+  
+body {
+  margin: 0;
+  //font-family: 'Chakra Petch', sans-serif;
+  background-color: white;
+  color: black;
+  font-family: $font-family;
+}
+  
+.container {
+  max-width: 1140px;
+  padding: 0;
+  margin: 0 auto;
+}
+  
+section {
+  //padding-left: 20px;
+  //padding-bottom: 50px;
+  text-align: center;
+}
+
+/* Navigation */
+
+nav {
+  padding-bottom: 12px;
+  padding-top: 25px;
+  padding-left: 20px;
+  text-align: right;
+}
+  
+nav ul {
+  list-style-type: none;
+}
+  
+nav ul li {
+  display: inline-block;
+  margin-right: 36px;
+  position: relative;
+}
+  
+nav ul li a {
+  text-decoration: none;
+  color: gray;
+}
+  
+nav ul li a:hover {
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 300px;
+  text-align: left;
+}
+
+/* Splash */
+
+.splash::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url("/images/background.png");
+  background-attachment: fixed;
+  color: rgb(187, 160, 121);
+}
+  
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  left: 50%;
+  letter-spacing: 8px;
+  transform: translate(-50%, -50%);
+}
+  
+.page-title {
+  font-size: 100px;
+  padding-left: 15%;
+  margin-bottom: 0;
+}
+
+.page-title:after {
+  position: absolute;
+  content: '';
+  bottom: -25px;
+  left: 50%;
+  width: 300px;
+  height: 5px;
+  transform: translateX(-50%);
+  background: rgb(187, 160, 121);
+}
+
+.page-subtitle {
+  font-size: 100px;
+  margin: 48px 0 0 0;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* BTN */
+
+.btn-one {
+  border-color: white;
+  color: white;
+  transition: all 1s;
+  background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+  background-position: 100% 0;
+  background-size: 300%;
+}
+
+.btn {
+  position: absolute;
+  bottom: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 1s;
+  font-weight: bold;
+}
+
+.btn i {
+  margin-top: 10px;
+}
+
+/* Products */
+
+.products .section-title {
+  position: relative;
+  font-size: 100px;
+  color: rgb(187, 160, 121);
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+.products .section-title::after {
+  position: absolute;
+  content: '';
+  bottom: -25px;
+  left: 50%;
+  width: 80%;
+  height: 5px;
+  transform: translateX(-50%);
+  background: rgb(187, 160, 121);
+}
