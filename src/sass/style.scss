@@ -1,5 +1,10 @@
+/* Variables */
+$color-main: #BEA67C;
+$color-white: #FFF;
+$color-black: #000;
+
 /* Fonts */
-$font-family: 'Roboto', sans-serif;
+$font-family: 'Open Sans', sans-serif;
 
 /* Global */
 *, *::before, *::after {
@@ -9,8 +14,8 @@ $font-family: 'Roboto', sans-serif;
   
 body {
   margin: 0;
-  background-color: white;
-  color: black;
+  background-color: $color-white;
+  color: $color-black;
   font-family: $font-family;
 }
   
@@ -45,18 +50,19 @@ nav ul li {
   
 nav ul li a {
   text-decoration: none;
-  color: gray;
+  color: $color-white;
+  font-weight: bold;
 }
   
 nav ul li a:hover {
-  color: white;
+  color: $color-white;
 }
 
 .logo {
   position: absolute;
   left: 0;
   font-weight: bold;
-  color: white;
+  color: $color-white;
   font-size: 20px;
   padding: 10px;
   padding-bottom: 0px;
@@ -82,7 +88,7 @@ nav ul li a:hover {
   position: relative;
   background-image: url("/images/background.png");
   background-attachment: fixed;
-  color: rgb(187, 160, 121);
+  color: $color-main;
 }
   
 .splash-inner {
@@ -123,8 +129,8 @@ nav ul li a:hover {
 /* BTN */
 
 .btn-one {
-  border-color: white;
-  color: white;
+  border-color: $color-white;
+  color: $color-white;
   transition: all 1s;
   background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
   background-position: 100% 0;
@@ -133,14 +139,13 @@ nav ul li a:hover {
 
 .btn {
   position: absolute;
-  bottom: -300px;
+  bottom: -350px;
   left: 50%;
   transform: translateX(-50%);
   display: inline-block;
   min-width: 160px;
   padding: 20px 40px;
   border-radius: 5px;
-  font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
@@ -166,7 +171,7 @@ nav ul li a:hover {
 .products .section-title {
   position: relative;
   font-size: 60px;
-  color: rgb(187, 160, 121);
+  color: $color-main;
   letter-spacing: 8px;
   text-align: center;
   padding-bottom: 25px;
@@ -218,7 +223,7 @@ nav ul li a:hover {
 
 .product-description p {
   padding-left: 15%;
-  color: gray;
+  color: $color-black;
   margin-bottom: 20px;
 }
 
@@ -235,7 +240,7 @@ nav ul li a:hover {
   transform: translateX(-50%);
   width: 10%;
   height: 5px;
-  background-color: rgb(187, 160, 121);
+  background-color: $color-main;
 }
 
 .product-details {
@@ -255,7 +260,7 @@ nav ul li a:hover {
 
 .detail .value {
   font-weight: normal;
-  color: rgb(187, 160, 121);
+  color: $color-main;
   font-weight: bold;
 }
 
@@ -283,7 +288,7 @@ nav ul li a:hover {
   height: 50vh;
   position: relative;
   background-image: url("/images/about-us.jpg");
-  color: white;
+  color: $color-white;
 }
 
 .about-description {
@@ -328,7 +333,7 @@ nav ul li a:hover {
 /* Footer */
 
 .footer {
-  background-color: #f8f8f8;
+  background-color: $color-white;
   padding: 10px 0;
   text-align: center;
 }
