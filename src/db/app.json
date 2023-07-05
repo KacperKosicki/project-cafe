@@ -1,1 +1,25 @@
-{} 
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "LA LAGARTIJA",
+        "description": "Mysterious and treacherous...",
+        "roasting": "5/10",
+        "intensity": "6/10"
+      },
+      {
+        "id": 2,
+        "name": "EL TIGRE",
+        "description": "Really dark coffee...",
+        "roasting": "8/10",
+        "intensity": "9/10"
+      },
+      {
+        "id": 3,
+        "name": "LA CUARACHA",
+        "description": "Sweet and intensive...",
+        "roasting": "3/10",
+        "intensity": "7/10"
+      }
+    ]
+  }
