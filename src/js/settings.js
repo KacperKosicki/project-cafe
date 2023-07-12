@@ -1,5 +1,5 @@
 export const settings = {
-  apiUrl: 'http://localhost:3000',
+  apiUrl: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
   endpoints: {
     products: 'products',
   },
