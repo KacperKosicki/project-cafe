@@ -9,7 +9,6 @@ $font-family: 'Open Sans', sans-serif;
 /* Global */
 *, *::before, *::after {
   box-sizing: border-box;
-    
 }
   
 body {
@@ -270,6 +269,20 @@ nav ul li a:hover {
 
 .products .container article:last-child {
   margin-bottom: 0;
+}
+
+.product-most-popular {
+  position: absolute;
+  bottom: 5px;
+  left: 25%;
+}
+
+.product-most-popular .most-popular {
+  width: 120px;
+  height: 120px;
+  opacity: 0.8;
+  filter: sepia(100%) hue-rotate(45deg);
+  background-color: $color-main;
 }
 
 /* About us */
